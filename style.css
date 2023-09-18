@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+#tela {
+    border: 2px solid #000;
+    background-color: #FFF;
+    cursor: crosshair;
+}
+
+.colorArea {
+    width: 800px;
+    display: flex;
+}
+.color {
+    flex: 1;
+    height: 40px;
+    cursor: pointer;
+}
+.color.active {
+    border: 5px solid #FFF;
+}
+
+.clear {
+    border: 1px solid #000;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #FFF;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 20px;
+    color: #FFF;
+    font-size: 13px;
+}
+.github {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.github div {
+    position: fixed;
+    bottom: -2em;
+    right: -2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 1em #333;
+}
+
+.github div:hover {
+    background-color: rgba(255, 255, 255, 1);
+    transition: 0.6s;
+    color: #000;
+}
+
+.github div img {
+    width: 30%;
+    height: auto;
+    margin: 1.5em 1em 1.2em 0;
+}
+
+.github div p {
+    margin-right: 1.2em;
+}
